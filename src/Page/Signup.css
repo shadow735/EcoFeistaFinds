@@ -1,0 +1,64 @@
+.Signup {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  .Signup h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .Signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Signup input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .Signup input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Signup input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .Signup p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .Signup a {
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    background-color: #ffcc00; /* Highlight color */
+    padding: 5px 10px; /* Increase padding for a larger highlight */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Signup a:hover {
+    background-color: #ff9900; /* Highlight color on hover */
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add stronger shadow on hover */
+  }
+  
