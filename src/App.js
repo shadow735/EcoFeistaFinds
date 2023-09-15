@@ -11,7 +11,8 @@ import Blog from './Page/Blog';
 import Login from './Page/Login';
 import Signup from './Page/SignUp';
 import Admin from './admin/admin';
-
+import Product from './admin/product';
+import Dashboard from './admin/dashboard';
 function App() {
   return (
     <Router>
@@ -30,6 +31,8 @@ function App() {
             <Route path="/Login" element={<Login />} /> {/* Login Page */}
             <Route path="/Signup" element={<Signup />} /> {/* Login Page */}
             <Route path="/Admin" element={<Admin />} /> {/* Login Page */}
+            <Route path="/dashboard" element={<Dashboard />} /> {/* Login Page */}
+            <Route path="/product" element={<Product />} /> {/* Login Page */}
           </Routes>
         </main>
       </div>

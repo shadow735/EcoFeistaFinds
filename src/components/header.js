@@ -29,6 +29,7 @@ function HeadNav() {
               <Nav.Link as={Link} to="/Productlist">Product</Nav.Link>
               <Nav.Link as={Link} to="/Contact">Contact Us</Nav.Link>
               <Nav.Link as={Link} to="/Blog">Blog</Nav.Link>
+              <Nav.Link as={Link} to="/dashboard">Admin</Nav.Link>
             </Nav>
             {/* Login button */}
             <div className="text-end">

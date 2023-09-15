@@ -19,7 +19,7 @@ const Dashboard = () => {
           className={({ isActive }) =>
             isActive ? "link-active" : "link-inactive"
           }
-          to="/admin/products"
+          to="/product"
         >
           Products
         </NavLink>

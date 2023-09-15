@@ -1,0 +1,65 @@
+/* CreateProduct component styles */
+.StyledCreateProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Background color for the entire page */
+}
+
+.FormContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease; /* Add fadeIn animation */
+}
+
+.StyledForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-top: 2rem;
+}
+
+.StyledForm input,
+.StyledForm select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease; /* Add transition for input border */
+}
+
+.StyledForm input:focus,
+.StyledForm select:focus {
+  border: 2px solid #007DFF;
+  outline: none;
+}
+
+.ImagePreview {
+  margin: 2rem 0 2rem 2rem;
+  max-width: 300px;
+  width: 100%;
+}
+
+.ImagePreview img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.PrimaryButton {
+  padding: 10px 20px;
+  background-color: #007DFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add button hover effect */
+}
+
+.PrimaryButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Add scale animation on hover */
+}
