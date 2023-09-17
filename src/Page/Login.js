@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
-import  './Login.css';
+import "./Login.css";
+
 function Login() {
   const history = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [message, setMessage] = useState(""); // State to store the message to be displayed
 
   async function submit(e) {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/", {
+      const response = await axios.post("http://localhost:8000/login", {
         username,
         password,
       });
 
-      if (response.data === "exist") {
+      if (response.data === "success") {
         history("/", { state: { id: username } });
-      } else if (response.data === "notexist") {
-        alert("User has not signed up");
+      } else if (response.data === "usernotfound") {
+        setMessage("User does not exist. Please sign up.");
+      } else if (response.data === "wrongpassword") {
+        setMessage("Wrong password. Please try again.");
       }
     } catch (e) {
-      alert("Wrong details");
+      setMessage("Authentication error. Please try again.");
       console.error("Authentication error:", e);
     }
   }
@@ -43,6 +47,7 @@ function Login() {
         />
         <input type="submit" onClick={submit} />
       </form>
+      <p>{message}</p> {/* Display the message */}
       <br />
       <p>OR</p>
       <br />
