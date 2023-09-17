@@ -11,7 +11,7 @@ const Dashboard = () => {
           className={({ isActive }) =>
             isActive ? "link-active" : "link-inactive"
           }
-          to="/admin/summary"
+          to="/summary"
         >
           Summary
         </NavLink>

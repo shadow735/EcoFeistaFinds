@@ -8,7 +8,7 @@
 }
 .contact{
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   padding : 50px 100px;
   display: flex;
   align-items: center;
@@ -118,7 +118,7 @@
     margin-bottom: 40px;
   }
   .container-contact .contact-info{
-    width: 100%;
+    width: 90%;
   }
 }
 
