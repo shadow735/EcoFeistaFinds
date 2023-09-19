@@ -7,13 +7,14 @@ function Signup() {
   const history = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [message, setMessage] = useState(""); // State to store the message to be displayed
 
   async function submit(e) {
     e.preventDefault();
 
     // Check if fields are not empty
     if (!username || !password) {
-      alert("All fields are required.");
+      setMessage("All fields are required.");
       return;
     }
 
@@ -24,13 +25,13 @@ function Signup() {
       });
 
       if (response.data === "exist") {
-        alert("User already exists");
-      } else if (response.data === "notexist") {
+        setMessage("User already exists.");
+      } else if (response.data === "success") {
         history("/", { state: { id: username } });
       }
     } catch (e) {
-      alert("Wrong details");
-      console.error("Authentication error:", e);
+      setMessage("Registration error. Please try again.");
+      console.error("Registration error:", e);
     }
   }
 
@@ -39,7 +40,7 @@ function Signup() {
       <h1>Signup</h1>
       <form action="POST">
         <input
-          type="text" // Change to text type
+          type="text"
           required
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Username"
@@ -52,6 +53,7 @@ function Signup() {
         />
         <input type="submit" value="Submit" onClick={submit} />
       </form>
+      {message && <p className="error-message">{message}</p>} {/* Display the message */}
     </div>
   );
 }
