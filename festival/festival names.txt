@@ -1,20 +1,13 @@
 Lohri
 Pongal
 Republic Day
-Vasant Panchami
 Maha Shivratri
-Holika Dahana
-Holi
+Holika Dahana/Holi
 Gudi Padwa
-Ram Navami
 Good Friday
-Easter Day
 Baisakhi
 Ramzan Id/Eid-ul-Fitar
 Buddha Purnima/Vesak
-Ganga Dusshera
-Rath Yatra
-Eid al- Adha
 Guru Purnima
 Muharram
 Independence Day
@@ -22,11 +15,6 @@ Onam
 Raksha Bandhan (Rakhi)
 Janmashtami
 Ganesh Chaturthi/Vinayaka Chaturthi
-Gandhi Jayanti
-Maha Ashtami
-Maha Navami
 Dussehra
-Diwali/Deepavali
-Bhai Dooj
-Guru Nanak Jayanti
+Diwali/Deepavali/Bhai Dooj
 Christmas
