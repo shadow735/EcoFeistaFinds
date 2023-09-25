@@ -1,55 +1,307 @@
+* {
+  font-family: Nunito, sans-serif;
+}
 
-.about-us{
-  height: 100vh;
+.text-blk {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  line-height: 20px;
+  color: white;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
   width: 100%;
-  padding: 90px 0;
-  background: #ddd;
-}
-.img{
-  background-image : url("../Image/eco.jpg") ;
-  height: auto;
-  width:  302px;
- 
-}
-.about{
-  width: 1130px;
-  max-width: 85%;
-  margin: 0 auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.text-about{
-  width: 540px;
-}
-.text-about h6{
-  font-size: 50px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
 }
 
-span-about{
-  color: #4070f4;
+.responsive-container-block.bigContainer {
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(51, 51, 51);
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin: 0 0 0 0;
 }
-.text-about p{
+
+.responsive-container-block.Container {
+  max-width: 1320px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+
+.responsive-container-block.leftSide {
+  width: auto;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  flex-direction: column;
+  position: static;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  max-width: 300px;
+}
+
+.text-blk.heading {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 900;
+  color: #00B2EB;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+
+.text-blk.btn {
+  color: rgb(0, 178, 235);
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(160, 121, 0, 0.2) 0px 12px 35px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.responsive-container-block.rightSide {
+  width: 675px;
+  position: relative;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  height: 700px;
+  min-height: auto;
+}
+
+.number1img {
+  margin-top: 39%;
+  margin-right: 80%;
+  margin-bottom: 29%;
+  margin-left: 0px;
+  height: 32%;
+  width: 40%;
+  position: absolute;
+}
+
+.number2img {
+  margin-top: 0%;
+  margin-right: 42%;
+  margin-bottom: 42%;
+  margin-left: 23%;
+  width: 35%;
+  height: 35%;
+  position: absolute;
+}
+
+.number3img {
+  width: 20%;
+  height: 21%;
+  position: absolute;
+  margin-top: 74%;
+  margin-right: 64%;
+  margin-bottom: 30%;
+  margin-left: 19.5%;
+}
+
+.number4vid {
+  width: 34%;
+  height: 31%;
+  position: absolute;
+  margin-top: 62%;
+  margin-right: 27%;
+  margin-bottom: 0px;
+  margin-left: 41%;
+}
+
+.number5img {
+  position: absolute;
+  width: 32%;
+  height: 21%;
+  margin-top: 38.5%;
+  margin-right: 27%;
+  margin-bottom: 41%;
+  margin-left: 43%;
+}
+
+.number6img {
+  position: absolute;
+  margin-top: 0px;
+  margin-right: 3%;
+  margin-bottom: 67%;
+  margin-left: 60.3%;
+  width: 35%;
+  height: 33%;
+}
+
+.number7img {
+  position: absolute;
+  width: 40%;
+  margin-top: 36%;
+  margin-right: 0px;
+  margin-bottom: 18%;
+  margin-left: 77%;
+  height: 42%;
+}
+
+.text-blk.subHeading {
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: 1px;
 }
-.data{
-  margin-top: 30px;
-}
-.learn more{
-    font-size: 18px;
-    background: #4070f4;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    padding: 8px 25px;
-    border-radius: 6px;
-    transition: 0.5s;
+
+@media (max-width: 1024px) {
+  .responsive-container-block.Container {
+    flex-direction: column-reverse;
   }
-.learn more:hover{
-  background: #000;
-  border: 1px solid #4070f4;
+
+  .text-blk.heading {
+    text-align: center;
+    max-width: 370px;
+  }
+
+  .text-blk.subHeading {
+    text-align: center;
+  }
+
+  .responsive-container-block.leftSide {
+    align-items: center;
+    max-width: 480px;
+  }
+
+  .responsive-container-block.rightSide {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+  }
+
+  .responsive-container-block.rightSide {
+    margin: 0 auto 70px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-container-block.rightSide {
+    width: 450px;
+    height: 450px;
+  }
+
+  .responsive-container-block.leftSide {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .number1img {
+    display: none;
+  }
+
+  .number2img {
+    display: none;
+  }
+
+  .number3img {
+    display: none;
+  }
+
+  .number5img {
+    display: none;
+  }
+
+  .number6img {
+    display: none;
+  }
+
+  .number7img {
+    display: none;
+  }
+
+  .responsive-container-block.rightSide {
+    width: 100%;
+    height: 250px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  .number4vid {
+    position: static;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-blk.heading {
+    font-size: 25px;
+    line-height: 40px;
+    max-width: 370px;
+    width: auto;
+  }
+
+  .text-blk.subHeading {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .responsive-container-block.leftSide {
+    width: 100%;
+  }
 }

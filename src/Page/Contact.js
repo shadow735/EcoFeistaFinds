@@ -42,6 +42,7 @@ function Contact() {
         <div className="container-contact">
           <div className="contact-info">
           
+          
             {/* ... (rest of your code) */}
           </div>
           <div className="contact-form">
